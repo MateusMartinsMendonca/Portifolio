@@ -1,0 +1,224 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+.paragrafo{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 88px;
+}
+
+h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 66px;
+}
+
+h3{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h4{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 37px;
+}
+
+h5{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+h6{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+/* HEADER */
+
+.header{
+    width: 85%;
+    padding: 20px 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo{
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.menu-nav{
+    justify-self: center;
+    align-self: center;
+}
+
+.incones-redes-sociais{
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.logo{
+    width: 32px;
+    height: 32px;
+}
+
+.menu-nav a{
+   text-decoration: none;
+   margin: 0 16px;
+   color: #1B1E1B;
+}
+
+.incones-redes-sociais i{
+    margin: 0 16px;
+}
+
+hr{
+    color:  rgba(42, 53, 42, 0.25);
+}
+
+/* MAIN */
+
+main{
+    margin: auto;
+    margin-top: 64px;
+    width: 85%;
+    display: grid;
+}
+
+main h3{
+    justify-self: center;
+    margin-bottom: 32px;
+    color: #37FD3F;
+}
+
+main h1{
+    justify-self: center;
+    color: #1B1E1B;
+    text-align: center;
+}
+
+main p.paragrafo{
+    width: 360px;
+    margin-top: 32px;
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 96px;
+}
+
+.btn-main{
+    width: 290px;
+    height: 80px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    padding: 24px 48px;
+    gap: 24px;
+    background: radial-gradient(69.09% 152.66% at 13.64% 49.09%, #37FD3F 0%, #2BFEA9 100%);
+    border: 0;
+    color: white;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802));
+}
+
+/* GALERIA */
+
+.div-cabecalho-galeria{
+    display: grid;
+    width: 85%;
+    margin: auto;
+    margin-top: 256px;
+    justify-items: center;
+}
+
+.div-cabecalho-galeria h2{
+    margin-bottom: 32px;
+}
+
+.div-cabecalho-galeria p{
+    width: 360px;
+    text-align: center;
+}
+
+.div-galeria{
+    margin: auto;
+    margin-top: 128px;
+    width: 100%;
+    height: 65%;
+    background: #BAB9C1;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.galeria-img{
+    width: 100%;
+    height: 100%;
+    margin: 64px 0 0 64px;
+
+}
+
+.div-galeria-texto{
+    margin-left: 64px;
+    margin-top: 64px;
+    width: 250px;
+    justify-self: center;
+    text-align: center;
+    color: white;
+}
+
+.m-32{
+    margin-bottom: 32px;
+}
+
+.btn-galeria{
+    width: 280px;
+    height: 80px;
+    border-radius: 100px;
+    justify-self: center;
+    padding: 24px 48px;
+    border: 0;
+    color: white;
+    background-color: #ED4124;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802));
+}
+
+.contatos{
+    display: grid;
+    width: 85%;
+    margin: auto;
+    margin-top: 256px;
+    margin-bottom: 128px;
+}
+
+.contatos-textos{
+    width: 600px;
+}
+
+.m-92{
+    margin-bottom: 92px;
+}
+
+.footer{
+    width: 85%;
+    padding: 20px 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
