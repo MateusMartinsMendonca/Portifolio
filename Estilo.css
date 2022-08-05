@@ -58,8 +58,14 @@ a{
 }
 
 a:hover{
-    color: #2BFEA9 ;
+    color:  #2BFEA9;
 }
+
+
+
+.animoBorderCenter{display:inline-block;position:relative;cursor:pointer}.animoBorderCenter::after{content:'';position:absolute;left:50%;bottom:-3px;width:60%;height:3px;opacity:0;background:radial-gradient(69.09% 152.66% at 13.64% 49.09%, #37FD3F 0%, #2BFEA9 100%);transform:translate(-50%,0);transition:all .3s ease-in-out}.animoBorderCenter:hover::after{width:100%;opacity:1}
+        
+
 
 /* HEADER */
 
@@ -110,26 +116,27 @@ hr{
 
 /* MAIN */
 
-main{
+.hero-area{
     margin: auto;
     margin-top: 64px;
+    margin-bottom: 256px;
     width: 85%;
     display: grid;
 }
 
-main h3{
+.hero-area h3{
     justify-self: center;
     margin-bottom: 32px;
     color: #37FD3F;
 }
 
-main h1{
+.hero-area h1{
     justify-self: center;
     color: #1B1E1B;
     text-align: center;
 }
 
-main p.paragrafo{
+.hero-area p.paragrafo{
     width: 360px;
     margin-top: 32px;
     text-align: center;
@@ -137,7 +144,7 @@ main p.paragrafo{
     margin-bottom: 96px;
 }
 
-.btn-main{
+.btn-hero-area{
     width: 290px;
     height: 80px;
     border-radius: 100px;
@@ -155,59 +162,53 @@ main p.paragrafo{
 
 /* GALERIA */
 
-.div-cabecalho-galeria{
-    display: grid;
-    width: 85%;
-    margin: auto;
-    margin-top: 256px;
-    justify-items: center;
-}
-
-.div-cabecalho-galeria h2{
-    margin-bottom: 32px;
-}
-
-.div-cabecalho-galeria p{
-    width: 360px;
-    text-align: center;
-}
-
 .section-galeria{
-    margin-bottom: 256px;
+    margin: auto;
+    margin-bottom: 128px;
 }
 
 .titulo-galeria{
     width: 85%;
     margin: auto;
-    margin-bottom: 128px;
+    margin-bottom: 32px;
 }
 
 .fundo-galeria-1{
-    background: url(/Imagens/Fundo\ galeria.png);
-    height: 550px;
-    margin-bottom: 128px;
+    background: url(/Imagens/Fundo-galeria-1.png) no-repeat;
+    width: 100%;
+    height: 600px;
+    background-size: 100% 100%;
+    display: flex;
+    align-content: center;
 }
 
-.fundo-galeria-2{
-    background: url(/Imagens/fundo\ 2.svg);
-    height: 800px;
+.fundo-galeria-1-portifolio{
+    background: url(/Imagens/Fundo-galeria-1.png) no-repeat;
+    width: 100%;
+    height: 600px;
+    background-size: 100% 100%;
+    margin-bottom: 128px;
+    display: flex;
+    align-content: center;
 }
 
 .items-galeria-1{
     width: 85%;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 40%;
     gap: 24px;
-    padding-top: 64px;
 }
 
 .imagem-1{
     width: 600px;
+    justify-self: center;
 }
 
 .textos-galeria-1{
+    max-width: 350px;
     align-self: center;
+    justify-self: center;
     text-align: center;
     color: white;
 }
@@ -224,8 +225,26 @@ main p.paragrafo{
     filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802));
 }
 
+.fundo-galeria-2{
+    background: url(/Imagens/fundo-galeria-2.png) no-repeat;
+    width: 100%;
+    height: 650px;
+    background-size: 100% 100%;
+    display: flex;
+    align-content: center;
+}
+
+.fundo-galeria-2-portifolio{
+    background: url(/Imagens/fundo-galeria-2.png) no-repeat;
+    width: 100%;
+    height: 650px;
+    background-size: 100% 100%;
+    display: flex;
+    align-content: center;
+    margin-bottom: 128px;
+}
+
 .titulo-galeria-2{
-    padding-top: -228px;
     width: 85%;
     margin: auto;
 }
@@ -236,17 +255,19 @@ main p.paragrafo{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
-    padding-top: 200px;
+    
 }
 
 .imagem-2{
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    justify-self: center;
 }
 
 .textos-galeria-2{
+    max-width: 350px;
     align-self: center;
     text-align: center;
+    justify-self: center;
     color: white;
 }
 
@@ -262,11 +283,68 @@ main p.paragrafo{
     filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802));
 }
 
+.fundo-galeria-3{
+    background: url(/Imagens/fundo-galeria-3.png) no-repeat;
+    width: 100%;
+    height: 650px;
+    background-size: 100% 100%;
+    display: flex;
+    align-content: center;
+}
+
+.fundo-galeria-3-portifolio{
+    background: url(/Imagens/fundo-galeria-3.png) no-repeat;
+    width: 100%;
+    height: 650px;
+    background-size: 100% 100%;
+    margin-bottom: 128px;
+    display: flex;
+    align-content: center;
+}
+
+.titulo-galeria-3{
+    width: 85%;
+    margin: auto;
+}
+
+.items-galeria-3{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding-bottom: 32px;
+}
+
+.imagem-3{
+    width: 500px;
+    justify-self: center;
+}
+
+.textos-galeria-3{
+    max-width: 350px;
+    align-self: center;
+    text-align: center;
+    justify-self: center;
+    color: white;
+}
+
+.btn-galeria-3{
+    width: 280px;
+    height: 80px;
+    border-radius: 100px;
+    justify-self: center;
+    padding: 24px 48px;
+    border: 0;
+    color: white;
+    background-color: #A93752;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802));
+}
+
 .contatos{
     display: grid;
     width: 85%;
     margin: auto;
-    margin-top: 256px;
     margin-bottom: 128px;
 }
 
@@ -303,3 +381,5 @@ main p.paragrafo{
     border: none;
     color: #1B1E1B;
 }
+
+
