@@ -1,0 +1,191 @@
+/* HEADER */
+
+.header{
+    width: 85%;
+    padding: 20px 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo{
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.menu-nav{
+    justify-self: center;
+    align-self: center;
+}
+
+.incones-redes-sociais{
+    justify-self: flex-end;
+    align-self: center;
+    text-decoration: none;
+    color: none;
+}
+
+.logo{
+    width: 32px;
+    height: 32px;
+}
+
+.menu-nav a{
+   text-decoration: none;
+   margin: 0 16px;
+}
+
+.incones-redes-sociais i{
+    margin: 0 16px;
+}
+
+/* MAIN */
+
+.hero-area{
+    margin: auto;
+    margin-top: 64px;
+    margin-bottom: 256px;
+    width: 85%;
+    display: grid;
+}
+
+.hero-area h3{
+    justify-self: center;
+    margin-bottom: 32px;
+}
+
+.hero-area h1{
+    justify-self: center;
+    text-align: center;
+}
+
+.hero-area p.paragrafo{
+    width: 360px;
+    margin-top: 32px;
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 96px;
+
+}
+
+.btn-hero-area{
+    width: 290px;
+    height: 80px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    padding: 24px 48px;
+    gap: 24px;
+    background: radial-gradient(69.09% 152.66% at 13.64% 49.09%, #37FD3F 0%, #2BFEA9 100%);
+    border: 0;
+    color: white;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802));
+}
+
+/* Galeria */
+
+.section-galeria h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.subtitulo-galeria{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: 360px;
+    margin-bottom: 96px;
+}
+
+.fundo-galeria{
+    width: 100%;
+    height: 80vh;
+    background-color: #EFC591;
+    background-size: 100% 100%;
+    display: flex;
+    align-content: center;
+}
+
+.titulo-galeria{
+    width: 85%;
+    margin: auto;
+}
+
+.items-galeria{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    
+}
+
+.imagem{
+    width: 40vw;
+    justify-self: center;
+}
+
+.textos-galeria{
+    width: 30vw;
+    align-self: center;
+    text-align: center;
+    justify-self: center;
+    color: white;
+}
+
+.btn-galeria{
+    width: 280px;
+    height: 80px;
+    border-radius: 100px;
+    justify-self: center;
+    padding: 24px 48px;
+    border: 0;
+    color: white;
+    background-color: #4671C6;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802));
+}
+
+/* Contatos */
+
+.contatos{
+    display: grid;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 128px;
+}
+
+.contatos-textos{
+    width: 600px;
+}
+
+.btn-contatos{
+    width: 280px;
+    height: 80px;
+    border-radius: 100px;
+    justify-self: center;
+    padding: 24px 48px;
+    border: 0;
+    color: white;
+    background: radial-gradient(69.09% 152.66% at 13.64% 49.09%, #37FD3F 0%, #2BFEA9 100%);
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802));
+}
+
+/* Footer */
+
+.footer{
+    width: 85%;
+    padding: 20px 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-select{
+    align-self: center;
+    border: none;
+    color: #1B1E1B;
+}

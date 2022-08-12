@@ -1,0 +1,171 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    }
+
+/* Textos */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+.paragrafo{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+h1{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 88px;
+}
+
+h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 66px;
+}
+
+h3{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h4{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 37px;
+}
+
+h5{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+h6{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+/* Margens */
+
+.m-32{
+    margin-bottom: 32px;
+}
+
+.m-96{
+    margin-bottom: 96px;
+}
+
+.m-192{
+    margin-bottom: 192px;
+}
+
+.m-256{
+    margin-bottom: 256px;
+}
+
+/* Cores */
+
+.preto{
+    color: #1B1E1B;
+}
+
+.preto75{
+    color: rgba(42, 53, 42, 0.75);
+}
+
+.preto50{
+    color: rgba(42, 53, 42, 0.5);;
+}
+
+.primaria{
+    color: #37FD3F;
+}
+
+.secundaria{
+    color: #2BFEA9;
+}
+
+
+
+
+a{
+    color: #1B1E1B;
+}
+
+a:hover{
+    color:  #2BFEA9;
+}
+
+
+
+.animoBorderCenter{display:inline-block;position:relative;cursor:pointer}.animoBorderCenter::after{content:'';position:absolute;left:50%;bottom:-3px;width:60%;height:3px;opacity:0;background:radial-gradient(69.09% 152.66% at 13.64% 49.09%, #37FD3F 0%, #2BFEA9 100%);transform:translate(-50%,0);transition:all .3s ease-in-out}.animoBorderCenter:hover::after{width:100%;opacity:1}
+        
+
+
+
+
+hr{
+    color:  rgba(42, 53, 42, 0.25);
+}
+
+
+
+
+.galeria{
+    width: 65%;
+    height: 100vh;
+    margin: auto;
+    border: 5px solid #1B1E1B;
+}
+
+.projeto-base{
+    background-image: url(/Imagens/Top\ 16\ Mobile\ UI_UX\ Design\ Trends\ to\ Rule\ in\ 2022.png);
+    background-size: contain;
+    width: 200px;
+    height: 150px;
+    border-radius: 10%;
+}
+
+.projeto-portifolio{
+    background-image: url(/Imagens/10\ Awesome\ Web\ Developer\ Portfolios.png);
+    background-size: contain;
+    width:  300px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+.modal-ativo{
+    display: block;
+}
+
+.modal-container1,.modal-container2{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    display: none;
+    top: 0px;
+    left: 0px;
+}
+
+.modal{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    overflow-y: auto;
+    background: white;
+}
+
+.x{
+    width: 30px;
+    height: 30px;
+    justify-self: flex-end;
+}
